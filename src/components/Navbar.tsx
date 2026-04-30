@@ -20,13 +20,13 @@ export default function Navbar() {
             </div>
           </div>
           <div className="flex items-center space-x-4">
-            <a href="https://github.com/manojkumaru" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+            <a href="https://github.com/ManojKumar1303-bit" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
               <FaGithub size={20} />
             </a>
-            <a href="https://linkedin.com/in/manojkumaru" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+            <a href="https://www.linkedin.com/in/manoj-kumar-u-953736292/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
               <FaLinkedin size={20} />
             </a>
-            <a href="mailto:contact@example.com" className="text-gray-400 hover:text-white transition-colors">
+            <a href="mailto:manojkumarklr2006@gmail.com" className="text-gray-400 hover:text-white transition-colors">
               <FaEnvelope size={20} />
             </a>
           </div>

@@ -1,5 +1,6 @@
 import { ExternalLink, Code2 } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
+import Image from 'next/image';
 
 export default function Projects() {
   const projects = [
@@ -13,23 +14,25 @@ export default function Projects() {
         "Automated Data Handling",
         "Scalable RESTful API Architecture"
       ],
-      github: "https://github.com/",
-      live: "https://example.com",
-      featured: true
+      github: "https://github.com/ManojKumar1303-bit/payroll-salary-analyser",
+      live: "https://payroll-salary-analyser.vercel.app/upload",
+      featured: true,
+      image: "/project1.png"
     },
     {
       title: "Beverage Brand Corporate Platform",
       description: "Engineered a high-performance corporate web platform focusing on optimal UI/UX and seamless frontend performance. Integrated third-party APIs to support dynamic features including an intelligent chatbot and a product recommendation engine.",
-      tech: ["HTML5", "CSS3", "JavaScript", "REST APIs", "Vercel"],
+      tech: ["HTML5", "CSS3", "TypeScript", "REST APIs", "Vercel","Responsive UI"],
       features: [
         "Intelligent Chatbot Integration",
         "Product Recommendation System",
         "Optimized Frontend Architecture",
         "Responsive Modern UI"
       ],
-      github: "https://github.com/",
-      live: "https://example.com",
-      featured: false
+      github: "https://github.com/ManojKumar1303-bit/Goli-soda-website",
+      live: "https://kaaraalan.vercel.app/",
+      featured: false,
+      image: "/project2.png"
     }
   ];
 
@@ -108,14 +111,16 @@ export default function Projects() {
                 </div>
               </div>
 
-              {/* Project Image Placeholder */}
+              {/* Project Image Preview */}
               <div className="lg:w-1/2 bg-[#111111] p-8 flex items-center justify-center border-t lg:border-t-0 lg:border-l border-[#262626]">
                 <div className="w-full aspect-video rounded-lg border border-[#262626] bg-[#0a0a0a] flex items-center justify-center relative overflow-hidden group">
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 opacity-50 group-hover:opacity-100 transition-opacity"></div>
-                  <div className="text-gray-600 font-mono text-sm flex flex-col items-center">
-                    <Code2 size={48} className="mb-4 opacity-50" />
-                    <span>Project Preview</span>
-                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity z-10 pointer-events-none"></div>
+                  <Image 
+                    src={project.image}
+                    alt={`${project.title} Preview`}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
                 </div>
               </div>
             </div>
